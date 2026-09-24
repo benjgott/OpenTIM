@@ -66,6 +66,14 @@ mod prelude {
         panic!("Unimplemented");
     }
 
+    /// With the `lenient` cargo feature, hooks of parts OpenTIM hasn't implemented yet
+    /// (Mel, Ernie, Mel's house) become no-ops instead of panicking, so headless tools
+    /// can load levels that contain them. Every implemented part is unaffected.
+    #[cfg(feature = "lenient")]
+    pub const LENIENT: bool = true;
+    #[cfg(not(feature = "lenient"))]
+    pub const LENIENT: bool = false;
+
     // TIMWIN: 10a8:372e
     pub fn other_belt_part(part: &Part) -> *mut Part {
         if let Some(belt_data) = unsafe { part.belt_data.as_ref() } {
@@ -3679,30 +3687,35 @@ mod mel_schlemming {
 
     // TIMWIN: 1078:10ca
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:00c7
     fn reset(part: &mut Part) {
         // reset_c!(mel_schlemming_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:011c
     fn run(part: &mut Part) {
         // run_c!(mel_schlemming_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:0000
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(mel_schlemming_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1080:0220
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(mel_schlemming_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3895,7 +3908,7 @@ mod mels_house {
         goobers: (5, 255),
 
         create_fn: create,
-        reset_fn:  None,
+        reset_fn:  if LENIENT { Some(reset) } else { None },
         run_fn:    Some(run),
         bounce_fn: None,
         flip_fn:   None,
@@ -3903,14 +3916,23 @@ mod mels_house {
         rope_fn:   None,
     };
 
+    // lenient only: give the house a plain rectangle border (the real reset is unknown)
+    fn reset(part: &mut Part) {
+        let w = (part.size.x - 1) as u8;
+        let h = (part.size.y - 1) as u8;
+        part.set_border(&[(0, 0), (w, 0), (w, h), (0, h)]);
+    }
+
     // TIMWIN: 1078:11fe
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1086
     fn run(part: &mut Part) {
         // run_c!(mels_house_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -4038,30 +4060,35 @@ mod ernie_the_alligator {
 
     // TIMWIN: 1078:1262
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0203
     fn reset(part: &mut Part) {
         // reset_c!(ernie_the_alligator_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0259
     fn run(part: &mut Part) {
         // run_c!(ernie_the_alligator_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0000
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(ernie_the_alligator_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0384
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(ernie_the_alligator_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }

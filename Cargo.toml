@@ -15,5 +15,9 @@ byteorder = "1"
 # 0.14.1 has the bug: https://github.com/nannou-org/nannou/issues/611
 nannou = { git = "https://github.com/nannou-org/nannou", branch = "master" }
 
+[features]
+# See parts/mod.rs prelude::LENIENT.
+lenient = []
+
 [build-dependencies]
 cc = "1.0"
