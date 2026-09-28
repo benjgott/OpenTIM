@@ -1102,24 +1102,28 @@ mod jack_in_the_box {
 
     // TIMWIN: 1078:0632
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:19b7
     fn reset(part: &mut Part) {
         // reset_c!(jack_in_the_box_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1834
     fn run(part: &mut Part) {
         // run_c!(jack_in_the_box_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1a05
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(jack_in_the_box_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -1505,30 +1509,35 @@ mod bellows {
 
     // TIMWIN: 1078:0728
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:08f5
     fn reset(part: &mut Part) {
         // reset_c!(bellows_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:099e
     fn run(part: &mut Part) {
         // run_c!(bellows_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:08a6
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(bellows_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0959
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(bellows_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -1647,24 +1656,28 @@ mod cannon {
 
     // TIMWIN: 1078:07c3
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:138b
     fn reset(part: &mut Part) {
         // reset_c!(cannon_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:125a
     fn run(part: &mut Part) {
         // run_c!(cannon_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:13ef
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(cannon_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -1711,30 +1724,35 @@ mod dynamite {
 
     // TIMWIN: 1078:0814
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:0037
     fn reset(part: &mut Part) {
         // reset_c!(dynamite_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:009b
     fn run(part: &mut Part) {
         // run_c!(dynamite_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:0000
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(dynamite_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1068:00ed
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(dynamite_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -1772,24 +1790,28 @@ mod gun_bullet {
 
     // TIMWIN: 1078:0865
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0ee8
     fn reset(part: &mut Part) {
         // reset_c!(gun_bullet_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0f3e
     fn run(part: &mut Part) {
         // run_c!(gun_bullet_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0e9e
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(gun_bullet_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 }
@@ -1836,30 +1858,35 @@ mod light_switch_outlet {
 
     // TIMWIN: 1078:08a8
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:008c
     fn reset(part: &mut Part) {
         // reset_c!(light_switch_outlet_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:0103
     fn run(part: &mut Part) {
         // run_c!(light_switch_outlet_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:0000
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(light_switch_outlet_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1070:014b
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(light_switch_outlet_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -1903,36 +1930,42 @@ mod dynamite_with_plunger {
 
     // TIMWIN: 1078:08f9
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0bc2
     fn reset(part: &mut Part) {
         // reset_c!(dynamite_with_plunger_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0c56
     fn run(part: &mut Part) {
         // run_c!(dynamite_with_plunger_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0b60
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(dynamite_with_plunger_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0d12
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(dynamite_with_plunger_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0d59
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(dynamite_with_plunger_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -2031,24 +2064,28 @@ mod fan {
 
     // TIMWIN: 1078:0974
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:0620
     fn reset(part: &mut Part) {
         // reset_c!(fan_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:0676
     fn run(part: &mut Part) {
         // run_c!(fan_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:07bc
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(fan_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2086,30 +2123,35 @@ mod flashlight {
 
     // TIMWIN: 1078:09c5
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:1bcd
     fn reset(part: &mut Part) {
         // reset_c!(flashlight_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:1c23
     fn run(part: &mut Part) {
         // run_c!(flashlight_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:1b9e
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(flashlight_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1070:1c67
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(flashlight_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2166,24 +2208,28 @@ mod generator {
 
     // TIMWIN: 1078:0a0d
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1a0a
     fn reset(part: &mut Part) {
         // reset_c!(generator_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1a7d
     fn run(part: &mut Part) {
         // run_c!(generator_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:19f2
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(generator_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 }
@@ -2231,30 +2277,35 @@ mod gun {
 
     // TIMWIN: 1078:0a59
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1c49
     fn reset(part: &mut Part) {
         // reset_c!(gun_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1b3e
     fn run(part: &mut Part) {
         // run_c!(gun_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1cad
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(gun_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1078:1cfd
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(gun_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -2339,36 +2390,42 @@ mod lightbulb {
 
     // TIMWIN: 1078:0ae9
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1c4c
     fn reset(part: &mut Part) {
         // reset_c!(lightbulb_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1c98
     fn run(part: &mut Part) {
         // run_c!(lightbulb_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1c80
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(lightbulb_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1cd8
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(lightbulb_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1080:1d3d
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(lightbulb_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -2404,24 +2461,28 @@ mod magnifying_glass {
 
     // TIMWIN: 1078:0b18
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0f8e
     fn reset(part: &mut Part) {
         // reset_c!(magnifying_glass_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0fa3
     fn run(part: &mut Part) {
         // run_c!(magnifying_glass_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:113f
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(magnifying_glass_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2473,36 +2534,42 @@ mod kelly_the_monkey {
 
     // TIMWIN: 1078:0b42
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0b88
     fn reset(part: &mut Part) {
         // reset_c!(kelly_the_monkey_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0bf9
     fn run(part: &mut Part) {
         // run_c!(kelly_the_monkey_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0b30
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(kelly_the_monkey_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0cff
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(kelly_the_monkey_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1088:0d4f
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(kelly_the_monkey_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -2593,6 +2660,7 @@ mod heart_balloon {
     // TIMWIN: 1080:04b8
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(heart_balloon_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -2670,30 +2738,35 @@ mod boxing_glove {
 
     // TIMWIN: 1078:0c68
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0c34
     fn reset(part: &mut Part) {
         // reset_c!(boxing_glove_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0b2f
     fn run(part: &mut Part) {
         // run_c!(boxing_glove_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0af6
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(boxing_glove_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0ca4
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(boxing_glove_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2744,18 +2817,21 @@ mod rocket {
 
     // TIMWIN: 1078:0cb0
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:176e
     fn reset(part: &mut Part) {
         // reset_c!(rocket_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:1652
     fn run(part: &mut Part) {
         // run_c!(rocket_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2798,30 +2874,35 @@ mod scissors {
 
     // TIMWIN: 1078:0cfc
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:0145
     fn reset(part: &mut Part) {
         // reset_c!(scissors_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:01a9
     fn run(part: &mut Part) {
         // run_c!(scissors_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:00be
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(scissors_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:020e
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(scissors_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -2864,18 +2945,21 @@ mod solar_panels {
 
     // TIMWIN: 1078:0d49
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:0cce
     fn reset(part: &mut Part) {
         // reset_c!(solar_panels_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:0d01
     fn run(part: &mut Part) {
         // run_c!(solar_panels_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3021,24 +3105,28 @@ mod windmill {
 
     // TIMWIN: 1078:0db6
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0f5a
     fn reset(part: &mut Part) {
         // reset_c!(windmill_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0f9e
     fn run(part: &mut Part) {
         // run_c!(windmill_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:1035
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(windmill_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3076,12 +3164,14 @@ mod explosion {
 
     // TIMWIN: 0000:0000
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1070:01a8
     fn run(part: &mut Part) {
         // run_c!(explosion_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3119,30 +3209,35 @@ mod mort_the_mouse {
 
     // TIMWIN: 1078:0e10
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0e4e
     fn reset(part: &mut Part) {
         // reset_c!(mort_the_mouse_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0ebe
     fn run(part: &mut Part) {
         // run_c!(mort_the_mouse_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1090:0ea6
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(mort_the_mouse_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 1090:100e
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(mort_the_mouse_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3178,12 +3273,14 @@ mod cannon_ball {
 
     // TIMWIN: 1078:0e5d
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0592
     fn reset(part: &mut Part) {
         // reset_c!(cannon_ball_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3270,18 +3367,21 @@ mod candle {
 
     // TIMWIN: 1078:0ee3
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:1122
     fn reset(part: &mut Part) {
         // reset_c!(candle_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:116e
     fn run(part: &mut Part) {
         // run_c!(candle_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3348,18 +3448,21 @@ mod pipe_curved {
 
     // TIMWIN: 1078:0f33
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:0000
     fn reset(part: &mut Part) {
         // reset_c!(pipe_curved_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:006f
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(pipe_curved_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3463,24 +3566,28 @@ mod electric_engine {
 
     // TIMWIN: 1078:0fa3
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:0248
     fn reset(part: &mut Part) {
         // reset_c!(electric_engine_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:01ca
     fn run(part: &mut Part) {
         // run_c!(electric_engine_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1068:02b1
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(electric_engine_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3530,30 +3637,35 @@ mod vacuum {
 
     // TIMWIN: 1078:0ff3
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0af6
     fn reset(part: &mut Part) {
         // reset_c!(vacuum_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0b4c
     fn run(part: &mut Part) {
         // run_c!(vacuum_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0a9a
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(vacuum_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 
     // TIMWIN: 10d0:0d58
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(vacuum_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3589,12 +3701,14 @@ mod cheese {
 
     // TIMWIN: 1078:1044
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:18e6
     fn reset(part: &mut Part) {
         // reset_c!(cheese_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3751,6 +3865,7 @@ mod title_the_even_more {
 
     // TIMWIN: 1078:1112
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
@@ -3801,12 +3916,14 @@ mod title_incredible_machine {
 
     // TIMWIN: 1078:1170
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1058:153c
     fn reset(part: &mut Part) {
         // reset_c!(title_incredible_machine_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -3842,6 +3959,7 @@ mod title_credits {
 
     // TIMWIN: 1078:11b3
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
@@ -3863,12 +3981,14 @@ mod title_credits {
     // TIMWIN: 1058:1646
     fn run(part: &mut Part) {
         // run_c!(title_credits_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1058:1684
     fn rope(p1: &mut Part, p2: &mut Part, rope_slot: u8, flags: u16, p1_mass: i16, p1_force: i32) -> u8 {
         // rope_c!(title_credits_rope, p1, p2, rope_slot, flags, p1_mass, p1_force);
+        if LENIENT { return 0; }
         unimplemented();
     }
 }
@@ -3968,12 +4088,14 @@ mod super_ball {
 
     // TIMWIN: 1078:121f
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0592
     fn reset(part: &mut Part) {
         // reset_c!(super_ball_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -4141,24 +4263,28 @@ mod teapot {
 
     // TIMWIN: 1078:12af
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10b0:0000
     fn reset(part: &mut Part) {
         // reset_c!(teapot_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10b0:008d
     fn run(part: &mut Part) {
         // run_c!(teapot_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10b0:0048
     fn flip(part: &mut Part, _orientation: u16) {
         // flip_c!(teapot_flip, part, _orientation);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -4194,12 +4320,14 @@ mod eightball {
 
     // TIMWIN: 1078:0e5d
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0592
     fn reset(part: &mut Part) {
         // reset_c!(eightball_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
@@ -4235,24 +4363,28 @@ mod pinball_bumper {
 
     // TIMWIN: 1078:12fc
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:1084
     fn reset(part: &mut Part) {
         // reset_c!(pinball_bumper_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:10cc
     fn run(part: &mut Part) {
         // run_c!(pinball_bumper_run, part);
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 1048:0fbc
     fn bounce(part: &mut Part) -> bool {
         // bounce_c!(pinball_bumper_bounce, part);
+        if LENIENT { return true; }
         unimplemented();
     }
 }
@@ -4288,12 +4420,14 @@ mod lucky_clover {
 
     // TIMWIN: 1078:133f
     fn create(part: &mut Part) {
+        if LENIENT { return; }
         unimplemented();
     }
 
     // TIMWIN: 10a0:0c86
     fn reset(part: &mut Part) {
         // reset_c!(lucky_clover_reset, part);
+        if LENIENT { return; }
         unimplemented();
     }
 }
