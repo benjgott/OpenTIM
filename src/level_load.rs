@@ -149,10 +149,12 @@ fn part_load<F>(p: &level_file_format::Part, part: &mut tim_c::Part, part_ptr_fr
     }
 
     if let Some(a) = p.pulley_part_index {
-        // Assmes the part it's referring to has already been initialized
+        // Assumes the part it's referring to has already been initialized. Every shipped
+        // puzzle stores 0xFFFF here (the chain is wired by restore), so a null is normal.
         let other_part_raw = part_ptr_from_index(a);
-        let other_part = unsafe { other_part_raw.as_ref().unwrap() };
-        part.rope_data[1] = other_part.rope_data[0];
+        if let Some(other_part) = unsafe { other_part_raw.as_ref() } {
+            part.rope_data[1] = other_part.rope_data[0];
+        }
     }
 
     unsafe {
