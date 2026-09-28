@@ -537,6 +537,16 @@ pub extern fn part_image_size(part_type: c_int, index: u16, out: *mut ShortVec) 
     // some hard-coded part sizes until we implement loading them from the resource files
     let t = match PartType::from_u16(part_type as u16) {
         PartType::BowlingBall => Some((32, 32)),
+        // Sizes OpenTIM lacked, from the original level files and sprite sheets (bagatelle fork).
+        PartType::TennisBall => Some((16, 15)),
+        PartType::JackOLantern => Some((40, 33)),
+        PartType::ChristmasTree => Some((48, 73)),
+        PartType::CannonBall => Some((24, 23)),
+        PartType::SuperBall => Some((24, 23)),
+        PartType::Eightball => Some((24, 23)),
+        PartType::Cheese => Some((32, 18)),
+        PartType::LuckyClover => Some((32, 29)),
+        PartType::PipeCurved => Some((32, 32)),
         PartType::BrickWall => Some((16, 16)),
         PartType::Incline => match index {
             0 => Some((16, 32)),
